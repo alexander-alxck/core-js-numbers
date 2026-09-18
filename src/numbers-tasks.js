@@ -105,10 +105,7 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  */
 function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
-  // two vectors and angle in Pi
-  // return Math.sin(
-  //   ((x2 - x1) * (y2 - y1)) / (Math.abs(x2 - x1) * Math.abs(y2 - y1))
-  // );
+  // return Math.asin(((x2 - x1) * (y2 - y1)) / Math.abs((x2 - x1) * (y2 - y1)));
   throw new Error('Not implemented');
 }
 
@@ -140,8 +137,8 @@ function getLastDigit(value) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+function parseNumberFromString(value) {
+  return Number(value);
 }
 
 /**
