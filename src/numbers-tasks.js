@@ -357,10 +357,8 @@ function getSine(num) {
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase(/* number, base */) {
-  throw new Error('Not implemented');
-
-  // return Number.parseInt(number, base);
+function numberToStringInBase(number, base) {
+  return number.toString(base);
 }
 
 /**
